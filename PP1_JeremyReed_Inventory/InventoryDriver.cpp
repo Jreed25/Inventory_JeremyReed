@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-	// Variables
+	// Variables // Testing github
 	Inventory inv;		// Define an instance of the Inventory class
 	int itemNumber;		// Variable for itemNumber
 	int quantity;		// Variable for quantity
