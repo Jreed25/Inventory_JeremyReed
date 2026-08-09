@@ -9,16 +9,20 @@ private:
 	double cost;
 	int quantity;
 	int itemNumber;
+
 public:
 	Inventory();
 	Inventory(int, int, double);
+
 	void setItemNumber(int);
 	void setQuantity(int);
 	void setCost(double);
 	void setTotalCost();
+
 	int getItemNumber() const;
 	int getQuantity() const;
 	double getCost() const;
 	double getTotalCost() const;
 };
+
 #endif

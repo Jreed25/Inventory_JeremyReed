@@ -1,20 +1,19 @@
 #include "Inventory.h"  
 #include <iostream>		
 #include <cstdlib>		
+
 using namespace std;
 
 
-// Constructor initialize
 Inventory::Inventory()
 {
-	itemNumber = 0.0;
-	quantity = 0.0;
+	itemNumber = 0;
+	quantity = 0;
 	cost = 0.0;
 	totalCost = 0.0;
 }
 
 
-// Overloaded constructor
 Inventory::Inventory(int item, int q, double c)
 {
 	if (item < 0 || q < 0 || c < 0)
@@ -26,12 +25,11 @@ Inventory::Inventory(int item, int q, double c)
 	itemNumber = item;
 	quantity = q;
 	cost = c;
-	
+	totalCost = quantity * cost;
 
 }
 
 
-// Set Functions
 void Inventory::setItemNumber(int item)
 {
 	if (item >= 0)
@@ -73,7 +71,7 @@ void Inventory::setTotalCost()
 	totalCost = quantity * cost;
 }
 
-// Get Functions
+
 int Inventory::getItemNumber() const
 {
 	return itemNumber;
