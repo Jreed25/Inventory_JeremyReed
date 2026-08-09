@@ -34,7 +34,7 @@ Inventory_Management/
 Compile the program with:
 
 ```bash
-g++ main.cpp Inventory.cpp -o main
+g++ Inventory_Management/main.cpp Inventory_Management/Inventory.cpp -o main
 ```
 
 Run it with:
