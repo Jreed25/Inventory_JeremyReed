@@ -1,8 +1,6 @@
-// Specification file for the inventory class.
 #ifndef INVENTORY_H
 #define INVENTORY_H
 
-// Inventory class declaration
 
 class Inventory
 {

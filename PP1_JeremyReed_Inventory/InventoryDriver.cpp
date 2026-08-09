@@ -1,24 +1,16 @@
-// Name: Jeremy Reed
-// Class: CSC-220-51
-// Assignment: Practice Program 1
 
-// This program will use the inventory class, which is
-// declared in Inventory.h file. The member Inventory
-// class's member functions are defined in the 
-// Inventory.cpp file. This program should be compiled
-// with those files in a project.
 #include <iostream>
 #include "Inventory.h"
 using namespace std;
 
 int main()
 {
-	// Variables // Testing github
-	Inventory inv;		// Define an instance of the Inventory class
-	int itemNumber;		// Variable for itemNumber
-	int quantity;		// Variable for quantity
-	double cost;		// Variable for cost
-	double totalCost;	// Variable for total cost
+	
+	Inventory inv;		
+	int itemNumber;		
+	int quantity;		
+	double cost;		
+	double totalCost;	
 
 
 	system("cls");
@@ -32,7 +24,7 @@ int main()
 	inv.setTotalCost();
 	cout << "Total Cost: " << inv.getTotalCost() << endl << endl;
 
-	// Define an Inventory object and use the overloaded constructor
+	// Use overloaded constructor
 	Inventory inv2(777, 10, 12.50);
 
 	// Display new member values
