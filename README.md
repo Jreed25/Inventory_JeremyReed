@@ -1,12 +1,12 @@
 # Inventory Management System
 
-A C++ inventory management program demonstrating object-oriented programming and basic inventory data management. The program creates inventory objects, validates input, updates item information, and calculates total inventory cost.
+A C++ inventory management program that uses classes to create and manage inventory items. The program stores item information, validates input, updates inventory values, and calculates total inventory cost.
 
 ## Features
 
-* Create inventory items using default or parameterized constructors
+* Create inventory items using default and parameterized constructors
 * Store item number, quantity, and cost
-* Update inventory data using setter methods
+* Update inventory information using setter methods
 * Validate inventory values
 * Calculate total inventory cost
 
@@ -23,18 +23,20 @@ A C++ inventory management program demonstrating object-oriented programming and
 ## Project Structure
 
 ```text
-Inventory_Management/
-├── main.cpp
-├── Inventory.cpp
-└── Inventory.h
+inventory-management/
+└── src/
+    ├── main.cpp
+    ├── Inventory.cpp
+    └── Inventory.h
 ```
+
 
 ## How to Run
 
 Compile the program with:
 
 ```bash
-g++ Inventory_Management/main.cpp Inventory_Management/Inventory.cpp -o main
+g++ src/main.cpp src/Inventory.cpp -o main
 ```
 
 Run it with:
@@ -65,7 +67,4 @@ Cost: 19.95
 Total Cost: 399
 ```
 
-## Author
-
-Jeremy Reed
 
